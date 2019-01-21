@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pueblos Mágicos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/custom/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="vendor/custom/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="vendor/custom/owl-carousel/owl.theme.default.css" rel="stylesheet">
+    <link href="vendor/custom/css/animate.css" rel="stylesheet">
+    <link href="vendor/custom/css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- The Modal Login -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate " action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="vendor/custom/img/user.png" width="50" alt="Avatar" class="avatar img-fluid">
+            </div>
+
+            <div class="modal-container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- the modal Signup -->
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Registro</h1>
+                <p>Completa todos los campos del formulario</p>
+                <hr>
+                <label for="Nombre"><b>Nombre</b></label>
+                <input type="text" placeholder="Ingresa tu Nombre" name="Nombres" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Ingresa tu Email" name="email" required>
+
+
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+
+                <label for="psw-repeat"><b>Confirma Contraseña</b></label>
+                <input type="password" placeholder="Confirma tu Contraseña" name="psw-repeat" required>
+
+                <div class="signup-or-container">
+                    <div class="border-top pt-3"></div>
+                    <span>o</span>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                    </a>
+                    <a href="#" class="twitter btn">
+                        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                    </a>
+                    <a href="#" class="google btn">
+                        <i class="fa fa-google fa-fw"></i> Login with Google+
+                    </a>
+                </div>
+
+
+                <div class="bottom-container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" style="color:white" class="btn">Sign up</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" style="color:white" class="btn">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signup">Sign Up</button>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="vendor/custom/img/Captura2.PNG" height="80"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" onclick="document.getElementById('id01').style.display='block'">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="document.getElementById('id02').style.display='block'">SingUp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- seccion carrusel -->
+    <section class="carrusel">
+        <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active item-1">
+
+                </div>
+                <div class="carousel-item item-2">
+
+                </div>
+                <div class="carousel-item item-3">
+
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- seccion nosotros -->
+    <section class="nosotros">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">..</div>
+            </div>
+            <div class="column">
+                <div class="card">..</div>
+            </div>
+            <div class="column">
+                <div class="card">..</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <img src="vendor/custom/img/Bacalar.jpg" align=left hspace=7> -->
+
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/custom/owl-carousel/owl.carousel.js"></script>
+    <script src="vendor/custom/js/wow.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    kks
